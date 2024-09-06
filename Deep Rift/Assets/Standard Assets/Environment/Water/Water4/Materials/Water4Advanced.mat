@@ -120,7 +120,7 @@ Material:
     - _NormalsDisplacement: 0
     - _ReflDistort: 0.9267696
     - _RefrDistort: 1.4393286
-    - _Shininess: 313.21838
+    - _Shininess: 500
     - _ShoreTiling: 56.862743
     - _Speed: 0.4137931
     - _WaterDepth: 40.98077
@@ -145,10 +145,10 @@ Material:
     - _Foam: {r: 0.42666668, g: 0.48666668, b: 0, a: 0}
     - _FoamWaveParams: {r: 0, g: 0.24918434, b: 3.3395782, a: 1}
     - _Fresnel_ST: {r: 1, g: 1, b: 0, a: 0}
-    - _GAmplitude: {r: 1, g: 1, b: 1, a: 1}
-    - _GDirectionAB: {r: 1, g: 1, b: 1, a: 1}
-    - _GDirectionCD: {r: 1, g: 1, b: 1, a: 1}
-    - _GFrequency: {r: 1, g: 1, b: 1, a: 1}
+    - _GAmplitude: {r: -0.03, g: 0.3, b: 1.09, a: 1}
+    - _GDirectionAB: {r: 0, g: 0, b: 1, a: 0}
+    - _GDirectionCD: {r: 2, g: 1, b: 1, a: 1}
+    - _GFrequency: {r: 0, g: 1, b: 0.2, a: 0}
     - _GSpeed: {r: 1, g: 1, b: 1, a: 1}
     - _GSteepness: {r: 1, g: 1, b: 1, a: 1}
     - _HorizonColor: {r: 0.052907113, g: 0.24486735, b: 0.2835821, a: 1}
