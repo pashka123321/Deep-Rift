@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 283.2
     height: 494.4
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -676,9 +676,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9698086, y: 1.0715508, z: -1.2382636}
+    m_Target: {x: 34.723133, y: 158.35274, z: 18.642956}
     speed: 2
-    m_Value: {x: 0.9698086, y: 1.0715508, z: -1.2382636}
+    m_Value: {x: 34.723133, y: 158.35274, z: 18.642956}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -724,13 +724,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.495
   m_Rotation:
-    m_Target: {x: -0.06997066, y: 0.92410815, z: -0.20568787, w: -0.3143626}
+    m_Target: {x: -0.13711996, y: -0.22310786, z: 0.03102302, w: -0.96490717}
     speed: 2
-    m_Value: {x: -0.06997055, y: 0.9241067, z: -0.20568755, w: -0.3143621}
+    m_Value: {x: -0.13711683, y: -0.22188468, z: 0.030849397, w: -0.9648909}
   m_Size:
-    m_Target: 5.4373975
+    m_Target: 0.6160715
     speed: 2
-    m_Value: 5.6936097
+    m_Value: 0.58954215
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -794,7 +794,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff
+      m_ExpandedIDs: 1041feff5a41feff4643feff7024ffffc024ffffe225ffff622affffa22affffc82bffffaa30fffffa30ffff3c32ffff4858ffff205effff6a5effffac5fffffd67dffff7af9ffff30fbfffff85d0000e2620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1031,7 +1031,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Standard Assets/Environment/Water/Water/Textures
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1039,16 +1039,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 78
   m_LastFolders:
-  - Assets
+  - Assets/Standard Assets/Environment/Water/Water/Textures
   m_LastFoldersGridSize: 78
   m_LastProjectPath: C:\Users\pashka1233212233\Deep-Rift\Deep Rift
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c8590000
-    m_LastClickedID: 22984
-    m_ExpandedIDs: 00000000c859000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 196.6}
+    m_SelectedIDs: fa670000
+    m_LastClickedID: 26618
+    m_ExpandedIDs: 00000000cc590000ce6000001a6600003e660000f26600003e67000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1076,7 +1076,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c8590000
+    m_ExpandedIDs: 00000000cc590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1103,8 +1103,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300008273000050640000e4640000187b0000e0650000d8660000e46600004a690000dc660000ee660000e26600006c16010028670000f0670000b0940000c8680000e4670000ac6a0000806c0000eadb0100c86300002e6e0000e66e0000a40e0100c4cd0000de880000fc790000b27b00006a7a00005c7a0000226f00004c7d0000fce50000707d0000067e00006cde000000000000747d0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300008273000050640000e4640000187b0000e0650000d8660000e46600004a690000dc660000ee660000e26600006c16010028670000f0670000b0940000c8680000e4670000ac6a0000806c0000eadb0100c86300002e6e0000e66e0000a40e0100c4cd0000de880000fc790000b27b00006a7a00005c7a0000226f00004c7d0000fce50000707d0000067e00006cde0000747d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1202,7 +1202,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 134388
+  m_LastSelectedObjectID: 24076
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1244,7 +1244,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 221.6001
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
