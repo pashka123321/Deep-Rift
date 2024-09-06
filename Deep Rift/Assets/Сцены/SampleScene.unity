@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.01
+  m_Fog: 1
+  m_FogColor: {r: 0.20359553, g: 0.22329399, b: 0.5018867, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -303,7 +303,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 770.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -425,6 +425,9 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
+  - component: {fileID: 963194231}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -506,6 +509,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1753311736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35272f3bf49ac3746b5f80075ef7362a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  underwaterMaterial: {fileID: 2100000, guid: 6c5590629f7fa5d428a97af2628172c9, type: 2}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420acabc9eb8d3a44ab13568469e0039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wobble: {fileID: 2100000, guid: d71fa1ab5a008b04098eb85872e264af, type: 2}
+  underwaterColor: {r: 1, g: 1, b: 1, a: 0}
+  Blend: 0
+  multiply: {fileID: 4800000, guid: 4616dba0fcbb2734895383d1cbbb9e5f, type: 3}
+  overlay: {fileID: 4800000, guid: 248bbca4a4b462c48ab8721daca64412, type: 3}
+  screen: {fileID: 4800000, guid: eee2cf16b7a970b4a9b8ed9d63ede4b8, type: 3}
+  effectActive: 0
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32461723f8d34545ba20e124afba612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterCamera: {fileID: 963194230}
+  minHeight: 491
+  speed: 12
 --- !u!1 &1044457721
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,8 +765,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093854548}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.31361172, y: 0.40382227, z: 0.14903548, w: -0.84638274}
-  m_LocalPosition: {x: 68.37368, y: 481.34897, z: 72.83892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 77.36, y: 479.35004, z: 35.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -790,6 +840,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: b544816461f324e56a39767fdeb5b114, type: 3}
+      propertyPath: sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a5f2339f242f6cc41a982ec55ea3c201, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -809,6 +863,7 @@ GameObject:
   - component: {fileID: 1753311733}
   - component: {fileID: 1753311732}
   - component: {fileID: 1753311737}
+  - component: {fileID: 1753311738}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -830,9 +885,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   swimSpeed: 3
+  swimSpeedBoost: 6
   jumpForce: 5
   swimUpForce: 3
   mouseSensitivity: 200
+  fallInWaterTime: 0.5
+  exitWaterJumpMultiplier: 1.5
 --- !u!136 &1753311733
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -949,6 +1007,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1753311738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753311731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115ec8071e9ec3744b81a58c0eb3f6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fogDensity: 0.02
+  fogColor: {r: 0, g: 0.36078432, b: 0.6156863, a: 1}
+  heightThreshold: 491
 --- !u!1 &1862620550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,8 +1098,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862620550}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12983812, y: 0.008950549, z: 0.000861061, w: -0.9914944}
-  m_LocalPosition: {x: 112.12656, y: 477.83115, z: 83.73041}
+  m_LocalRotation: {x: -0.07679764, y: 0.11759321, z: 0.009087413, w: 0.99004614}
+  m_LocalPosition: {x: 161.36319, y: 265.5227, z: -930.38965}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
